@@ -1,0 +1,138 @@
+.container {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    margin: 10%;
+  }
+
+body {
+    background-color: rgb(240, 240, 240);
+}
+
+h1 {
+    color: #1877f2;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 52px;
+    
+}
+
+h2 {
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.text {
+    flex: 1;
+    max-width: 450px;
+    margin-right: 50px;
+}
+
+.right {
+    width: 400px;
+    margin-left:50px;
+}
+
+.box {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgb(180, 180, 180);
+    text-align: center;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.login-form input {
+    padding: 10px;
+    border: 1px solid #dddfe2;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.login-form button {
+    background-color: #1877f2;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.login-form button:hover {
+    background-color: #145dbf;
+}
+
+.login-form button.create-account {
+    background-color: #42b72a;
+    margin-top: 10px;
+    padding: 10px;
+    text-align: center;
+    margin: 0 auto;
+    width: 60%;
+}
+
+.login-form button.create-account:hover {
+    background-color: #36a420;
+}
+
+.login-form a {
+    color: #1877f2;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.login-form a:hover {
+    text-decoration: underline;
+}
+
+p {
+    font-size: 16px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+p a {
+    color: black;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+hr { 
+    height: 1px; 
+    background-color: rgb(180, 180, 180); 
+    margin: 20px 0; 
+    width: 100%;
+}
+
+footer {
+    background-color: white;
+    color: rgb(150, 150, 150);
+    text-align: left;
+    padding: 15px 170px 5px 170px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer a {
+    color: rgb(150, 150, 150);
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer .languages, footer .links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; 
+}
