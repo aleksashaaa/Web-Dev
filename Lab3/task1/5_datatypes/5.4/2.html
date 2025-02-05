@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        'use strict'
+        let sum = 0;
+        let res =[];
+        function sumInput(){
+            let val;
+            while(true) {
+                val = prompt("Num?", 0);
+                if (isFinite(val)) {
+                    res.push(+val);
+                    sum += +val;
+                }
+                else {
+                    break;
+                }
+            }
+        }
+        sumInput();
+        alert(res);
+        alert(sum);
+    </script>
+</body>
+</html>

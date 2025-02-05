@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        'use strict'
+        function filterRange(arr, a, b) {
+            let res =[];
+            for (let x in arr) {
+                if (arr[x] >= a && arr[x] < b) res.push(arr[x]);
+            }
+            return res;
+        }
+        let arr = [5, 3, 8, 1];
+        let filtered = filterRange(arr, 1, 4);
+        alert( filtered ); // 3,1 (matching values)
+        alert( arr ); 
+    </script>
+</body>
+</html>

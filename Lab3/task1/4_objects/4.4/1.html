@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let calculator = {
+            read() {
+                this.x = +prompt("first number", 0);
+                this.y = +prompt("second number", 0);
+            },
+            sum() {
+                return this.x + this.y;
+            },
+            mul() {
+                return this.x*this.y;
+            }
+        };
+
+        calculator.read();
+        alert( calculator.sum() );
+        alert( calculator.mul() );
+    </script>
+</body>
+</html>
