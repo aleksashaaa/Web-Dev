@@ -18,6 +18,9 @@ function addTask() {
         todoList.append(li);
         input.value = '';
     }
+    else {
+        alert("You should type smth");
+    }
 };
 
 todoList.addEventListener('click', (event) => {
