@@ -1,0 +1,32 @@
+<div class="results">
+    <div *ngFor="let product of products; let i = index" class="product-item">
+      
+      <div [id]="'carousel' + i" class="carousel slide">
+        <div class="carousel-inner">
+          <div *ngFor="let img of product.gallery; let j = index" class="carousel-item" [class.active]="j === 0">
+            <img [src]="img" class="d-block w-100" alt="{{ product.name }}">
+          </div>
+        </div>
+  
+        <button class="carousel-control-prev" type="button" [attr.data-bs-target]="'#carousel' + i" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" [attr.data-bs-target]="'#carousel' + i" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+  
+      <div class="text">
+        <h2>{{ product.name }}</h2>
+        <p>{{ product.description }}</p>
+        <p>Rating: {{ product.rating }}</p>
+        <div class="share-buttons">
+          <a [href]="'https://t.me/share/url?url=' + product.link" target="_blank" class="telegram">Share on Telegram</a>
+          <a [href]="'https://wa.me/?text=' + product.link" target="_blank" class="whatsapp">Share on WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  

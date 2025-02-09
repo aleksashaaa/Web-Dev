@@ -9,7 +9,7 @@ import { RouterModule } from '@angular/router';
     <a [routerLink]="['/']">
       <header class="brand-name">
         <img class="brand-icon" src="/assets/logo.svg" alt="logo"
-          aria-hidden="true">
+      aria-hidden="true">
     </header>
     </a>
     <section class="content">

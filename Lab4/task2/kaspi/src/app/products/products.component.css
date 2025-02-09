@@ -1,0 +1,70 @@
+.results {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .product-item {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+    width: 270px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .product-item img {
+    width: 100%;
+    border-radius: 8px;
+    height: 250px;
+    object-fit: cover;
+  }
+  
+  .product-item h2 {
+    font-size: 20px;
+    margin: 10px 0;
+  }
+  
+  .product-item p {
+    font-size: 15px;
+    color: #392f2f;
+    text-align: left;
+    padding-left: 20px;
+  }
+  
+  .share-buttons {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .share-buttons a {
+    padding: 5px 5px;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    font-size: 12px;
+  }
+  
+  .telegram {
+    background-color: #0088cc;
+  }
+
+  .telegram:hover{
+    background-color: #006294;
+  }
+  
+  .whatsapp {
+    background-color: #25D366;
+  }
+  .whatsapp:hover {
+    background-color: #1ca04d;
+  }
+  
