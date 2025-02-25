@@ -1,0 +1,33 @@
+h1 {
+    font-size: 50;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:rgb(2, 2, 139);
+    text-align: center;
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px 100px;
+}
+.navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.navigation a{
+    background-color: rgb(199, 213, 228);
+    margin: 25px 50px 50px 50px;
+}
+
+.navigation a:hover{
+    background-color: rgb(255, 101, 191);
+}
+
+img {
+    width: 100%;
+    border-radius: 20px;
+}
